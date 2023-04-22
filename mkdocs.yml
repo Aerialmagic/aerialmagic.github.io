@@ -1,5 +1,6 @@
-site_name: AERIALMAGIC WEBSITE
+site_name: AERIALMAGIC
 theme: 
+  favicon: img/favicon.ico
   name: material
   features:
     - navigation.sections
@@ -42,6 +43,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - exclude:
+      glob:
+        - assets/images/favicon.png
         
 copyright: 
   2023 <a href="https://github.com/aerialmagic" target="_blank" rel="noopener">Aerial Magic<a/>
