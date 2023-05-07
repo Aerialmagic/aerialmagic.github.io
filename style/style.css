@@ -40,6 +40,11 @@ img{
 
 
 
+
+
+                        /* nav */
+
+
 .window-scroll{
     box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid #eea47fff;
@@ -54,6 +59,10 @@ nav{
     position: fixed;
     width: 100%;
     padding: 0 5rem;
+    z-index: 11;
+}
+#menu-toggle{
+    display: none;
 }
 
 .nav-menu{
@@ -68,9 +77,15 @@ nav{
     color: #eea47fff;
     transition: all 400ms ease;
 }
+              /* end of nav*/
 
+
+
+
+               /* header */
 header{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0;
@@ -126,9 +141,16 @@ header{
     transition: all 400ms ease;
 }
 
+                        /* end of header */
 
 
 
+
+
+
+
+
+                        /* about */
 .about{
     display: flex;
     align-items: center;
@@ -155,10 +177,14 @@ header{
     font-size: 1.1rem;
     font-weight: lighter;
 }
+                        /* end of about */
 
 
 
 
+
+
+                        /* service */
 
 
 .service-h2{
@@ -193,11 +219,16 @@ header{
     padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
+                        /* end of service */
 
 
 
 
 
+
+
+
+                        /* how it works */
 
 .hiw{
     display: flex;
@@ -228,7 +259,15 @@ header{
 .hiw-right{
     width: 50%;
 }
+                        /* end of how it works */
 
+
+
+
+
+
+
+                        /* faq */
 
 .faqs{
     display: grid;
@@ -297,7 +336,14 @@ i:hover{
     text-align: center;
 }
 
+                        /* end of faq */
 
+
+
+
+
+
+                        /* subscription */
 .sub{
     background-color: #eea47fff;
     display: flex;
@@ -322,9 +368,12 @@ input{
     padding: 1rem 15rem 1rem 2rem;
 }
 
+                        /* end of subscription */
 
 
 
+
+                        /* footer */
 
 
 footer{
@@ -390,3 +439,154 @@ small h1{
     font-weight: lighter;
     text-align: center;
 }
+
+
+
+                        /* end of footer */
+
+
+
+@media  screen and (max-width: 767px) {
+    .container{
+        padding: 4rem 1rem;
+    }
+
+
+
+              /* nav */
+
+    nav{
+        padding: 0 1rem;
+        height: 5rem;
+    }  
+    #rev{
+        display: none;
+    }  
+    #menu-toggle{
+        display: flex;
+    }      
+    .close-btn{
+        display: none;
+    }
+     .nav-menu{
+        position: fixed;
+        top: 5rem;
+        flex-direction: column;
+        background: #00539cff;
+        right: 0;
+        height: 100%;
+        padding: 4rem;
+        gap: 2rem;
+        width: 50%;
+        display: none;
+    } 
+    .nav-menu li a{
+        color: #eea47fff;
+    }
+    .nav-menu li a:hover{
+        text-decoration: underline;
+        transition: all 400ms ease;
+    }
+
+             /* end of nav*/
+    
+             
+     
+    header{
+        flex-direction: column;
+        padding: 32rem 1rem;
+        text-align: center;
+        height: 52rem;
+    }  
+    .header-left{
+        width: 100%;
+    }   
+    .header-left h1{
+        font-size: 2.1rem;
+        line-height: 1.2;
+    }
+    .header-right{
+        width: 100%;
+        padding-top: 3rem;
+    }    
+    .header-btn{
+        flex-direction: column;
+    }
+
+
+
+
+    .about{
+        flex-direction: column;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .about-left{
+        width: 100%;
+    }
+
+
+    .services{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+
+
+    .hiw{
+        flex-direction: column-reverse;
+    }
+    .hiw-left{
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .hiw-right{
+        width: 100%;
+    }
+
+
+
+
+    .faqs{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .ask-text{
+        flex-direction: column;
+        padding:  0rem 1rem 2rem;
+    }
+    .ask-text h2{
+        width: 100%;
+        text-align: center;
+    }
+    .ask-text a{
+        width: 100%;
+    }
+    .sub{
+        text-align: center;
+        gap: 1rem;
+    }
+    .inp{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    footer{
+        padding-top: 2rem;
+        background-image: linear-gradient(to right, #eea47fff, #00539cff);
+    }
+    .footers{
+        grid-template-columns: 1fr;
+        place-items: unset;
+        padding: 2rem 3rem;
+    }
+    .sub-service a{
+        font-weight: lighter;
+    }
+    small h1{
+        font-size: 1.2rem;
+    }
+}           
