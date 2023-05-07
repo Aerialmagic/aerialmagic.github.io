@@ -8,6 +8,25 @@ window.addEventListener('scroll', () => {
 
 
 
+const menu = document.querySelector('.nav-menu');
+const openBtn = document.querySelector('.open-btn');
+const closeBtn = document.querySelector('.close-btn');
+
+
+
+openBtn.addEventListener('click', () => {
+    menu.style.display = 'flex';
+    closeBtn.style.display = 'flex';
+    openBtn.style.display = 'none';
+})
+
+closeBtn.addEventListener('click', () => {
+    menu.style.display = 'none';
+    closeBtn.style.display = 'none';
+    openBtn.style.display = 'flex';
+})
+
+
 
 
 const faqs = document.querySelectorAll('.faq');
