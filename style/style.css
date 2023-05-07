@@ -296,3 +296,97 @@ i:hover{
     width: 20%;
     text-align: center;
 }
+
+
+.sub{
+    background-color: #eea47fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+.sub h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.sub p{
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+.inp{
+    display: flex;
+    gap: 1rem;
+}
+input{
+    padding: 1rem 15rem 1rem 2rem;
+}
+
+
+
+
+
+
+footer{
+    background-image: linear-gradient(to right, #00539cff, #eea47fff);
+    padding-top: 3rem;
+    color: #ffffff;
+}
+.footers{
+    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 3rem;
+}
+.footer a{
+    color: #ffffff;
+}
+.footer a:hover{
+    text-decoration: underline;
+    transition: all 400ms ease;
+}
+.footer p{
+    font-weight: lighter;
+    padding-top: 1rem;
+}
+.sub-service{
+    padding-top: 1rem;
+}
+.sub-service a{
+    color: #ffffff;
+    padding-top: .7rem;
+}
+.sub-service a:hover{
+    text-decoration: underline;
+    transition: all 400ms ease;
+}
+
+.sub-service1{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+.sub-service2{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+    align-items: center;
+    padding-top: .5rem;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+small h1{
+    border-top: 1px solid #ffffff;
+    padding: 1.5rem 0;
+    font-weight: lighter;
+    text-align: center;
+}
