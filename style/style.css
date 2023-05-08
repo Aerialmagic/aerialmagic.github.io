@@ -11,6 +11,7 @@ body{
     background-color: #ffffff;
     color: #000;
     line-height: 1.2;
+    overflow-x: hidden;
 }
 
 .container{
@@ -288,6 +289,7 @@ header{
 }
 .faq-icon{
     align-self: flex-start;
+    margin-top: -.5rem;
 }
 .faq-text h4{
     font-size: 1.1rem;
@@ -456,14 +458,17 @@ small h1{
               /* nav */
 
     nav{
-        padding: 0 1rem;
+        padding:0 1rem;
         height: 5rem;
+        position: fixed;
+        width: 100%;
     }  
     #rev{
         display: none;
     }  
-    #menu-toggle{
+    #menu-toggle {
         display: flex;
+       
     }      
     .close-btn{
         display: none;
@@ -475,9 +480,9 @@ small h1{
         background: #00539cff;
         right: 0;
         height: 100%;
-        padding: 4rem;
+        padding: 4rem ;
         gap: 2rem;
-        width: 50%;
+        left: 50%;
         display: none;
     } 
     .nav-menu li a{
@@ -552,6 +557,15 @@ small h1{
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+    .faq{
+        padding: 1rem;
+    }
+    .faq p{
+        margin-left: -3rem;
+    }
+    .faq-icon{
+        margin-top: -.5rem;
+    }
     .ask-text{
         flex-direction: column;
         padding:  0rem 1rem 2rem;
@@ -571,6 +585,10 @@ small h1{
         flex-direction: column;
         align-items: center;
     }
+    input{
+        width: 100%;
+        padding-left: 1rem;
+    }
 
 
 
@@ -581,7 +599,7 @@ small h1{
     .footers{
         grid-template-columns: 1fr;
         place-items: unset;
-        padding: 2rem 3rem;
+        padding: 2rem 1rem;
     }
     .sub-service a{
         font-weight: lighter;
