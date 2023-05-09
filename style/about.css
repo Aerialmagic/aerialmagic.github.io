@@ -1,0 +1,35 @@
+.h2{
+    padding-top: 3rem;
+}
+
+.about-right p{
+    line-height: 1.7;
+}
+
+
+
+.mvv{
+    display: flex;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+.mission h2{
+    color: #00539cff;
+    padding-bottom: .5rem;
+}
+.vision h2{
+    color: #00539cff;
+    padding-bottom: .5rem;
+}
+.value h2{
+    color: #00539cff;
+    padding-bottom: .5rem;
+}
+
+
+
+@media  screen and (max-width: 767px){
+    .mvv{
+        flex-direction: column;
+    }
+}
