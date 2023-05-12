@@ -264,6 +264,63 @@ header{
 
 
 
+                        
+
+                         /* blog */
+
+
+
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.blog {
+position: relative;
+}
+
+.blog::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+z-index: 1; 
+}
+
+.image-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #eea47fff;
+background-color: #ffffff;
+font-size: 1.1rem;
+font-weight: 500;
+padding: .5rem 3rem;
+z-index: 2; 
+}
+.image-text:hover{
+    background-color: #00539cff;
+    color: #ffffff;
+    transition: all 400ms ease;
+}
+.blog img{
+    border-radius: .5rem;
+}
+                          
+
+
+
+
+
+
+                          /* end of blog */
+
 
 
 
@@ -537,6 +594,11 @@ small h1{
         gap: 1rem;
     }
 
+
+    .blogs{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
 
     .hiw{
